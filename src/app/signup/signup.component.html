@@ -2,26 +2,26 @@
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-
+            <h1 style="text-align: center;">NEW APPLICATION</h1>
 
 <div class="row g-4">
     <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
     <label for="" class="form-label">Name</label>
-    <input type="text" class="form-control" >
+    <input type="text" class="form-control" name="name" [(ngModel)]="name" >
 </div>
 
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
     <label for="" class="form-label">Phone Number</label>
-    <input type="text" class="form-control" >
+    <input type="text" class="form-control" name="phone" [(ngModel)]="phone" >
 </div>
 
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     <label for="" class="form-label">Gender</label>
   
-    <select name="" id="" class="form-control">
+    <select name="gender" [(ngModel)]="gender" id="" class="form-control">
         <option value="select">-----select-----</option>
         <option value="Male">Male</option>
         <option value="Female">Female</option>
@@ -32,23 +32,23 @@
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     <label for="" class="form-label">Email Id</label>
-<input type="email" name="" id="" class="form-control">
+<input type="email" name="email" [(ngModel)]="email" id="" class="form-control">
 </div>
 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
     
     <label for="" class="form-label">Address</label>
-<textarea name="" id="" cols="30" rows="10" class="form-control"></textarea>
+<textarea name="address" [(ngModel)]="address" id="" cols="30" rows="10" class="form-control"></textarea>
 </div>
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     <label for="" class="form-label">Pincode</label>
-    <input type="text" class="form-control" >
+    <input type="text" class="form-control" name="pincode" [(ngModel)]="pincode" >
 </div>
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     
     <label for="" class="form-label">Blood Group</label>
-    <select name="" id="" class="form-control">
+    <select name="bloodGroup" [(ngModel)]="bloodGroup" id="" class="form-control">
         <option value="select">-----select-----</option>
         <option value="AB+ve">AB+ve</option>
         <option value="AB-ve">AB-ve</option>
@@ -63,33 +63,33 @@
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     <label for="" class="form-label">Date Of Birth</label>
-<input type="date" name="" id="" class="form-control">
+<input type="date" name="dob" [(ngModel)]="dob" id="" class="form-control">
 </div>
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     <label for="" class="form-label">Age</label>
-    <input type="text" class="form-control" >
+    <input type="text" class="form-control" name="age" [(ngModel)]="age">
 </div>
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     <label for="" class="form-label">Parent Name</label>
-    <input type="text" class="form-control" >
+    <input type="text" class="form-control" name="parentName" [(ngModel)]="parentName" >
 </div>
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     <label for="" class="form-label">Password</label>
-    <input type="password" name="" id="" class="form-control">
+    <input type="password" name="password" [(ngModel)]="password" id="" class="form-control">
 </div>
 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
     
     <label for="" class="form-label">Confirm Password</label>
-<input type="password" name="" id="" class="form-control">
+<input type="password" name="confirmPass" [(ngModel)]="confirmPass" id="" class="form-control">
 </div>
 
 
 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12-col-xxl-12">
 
-<button class="btn btn-success" >Register</button>
+<button class="btn btn-success" [disabled]="status" (click)="readValues()">Register</button>
 </div>
 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12-col-xxl-12">
 
